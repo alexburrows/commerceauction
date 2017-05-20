@@ -1,0 +1,28 @@
+uuid: ad7c8eb0-3cd5-4313-a841-259f1602daba
+langcode: en
+status: true
+dependencies:
+  module:
+    - donate
+    - node
+  theme:
+    - blueprint
+id: donationblock
+theme: blueprint
+region: content
+weight: -1
+provider: null
+plugin: donate_block
+settings:
+  id: donate_block
+  label: 'Donation block'
+  provider: donate
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      fundraising_page: fundraising_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

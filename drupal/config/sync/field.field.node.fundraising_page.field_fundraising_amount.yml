@@ -1,0 +1,23 @@
+uuid: 37bff82e-57b0-4972-b800-955fe0f00aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fundraising_amount
+    - node.type.fundraising_page
+id: node.fundraising_page.field_fundraising_amount
+field_name: field_fundraising_amount
+entity_type: node
+bundle: fundraising_page
+label: 'Fundraising amount'
+description: 'This is the amount that needs to be reached'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: £
+  suffix: ''
+field_type: float

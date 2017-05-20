@@ -1,0 +1,21 @@
+uuid: 18940d4f-abfe-4c6f-991d-9a3f31410944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_to_achieve_by
+    - node.type.fundraising_page
+  module:
+    - datetime
+id: node.fundraising_page.field_date_to_achieve_by
+field_name: field_date_to_achieve_by
+entity_type: node
+bundle: fundraising_page
+label: 'Date to achieve by'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

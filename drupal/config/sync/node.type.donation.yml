@@ -1,0 +1,17 @@
+uuid: 67d23493-c3af-48d5-8e5c-74b41f25e446
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Donation
+type: donation
+description: 'Donations are created and referenced inside the fundraising content type'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

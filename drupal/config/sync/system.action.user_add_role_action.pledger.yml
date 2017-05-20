@@ -1,0 +1,14 @@
+uuid: 32ff4a3c-e79e-4096-bf89-67262d7906c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pledger
+  module:
+    - user
+id: user_add_role_action.pledger
+label: 'Add the Pledger role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pledger

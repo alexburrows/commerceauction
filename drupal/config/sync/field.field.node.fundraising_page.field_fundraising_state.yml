@@ -1,0 +1,23 @@
+uuid: 74941792-d86c-4208-a638-8bf8f42e173a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fundraising_state
+    - node.type.fundraising_page
+  module:
+    - options
+id: node.fundraising_page.field_fundraising_state
+field_name: field_fundraising_state
+entity_type: node
+bundle: fundraising_page
+label: 'Fundraising state'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
