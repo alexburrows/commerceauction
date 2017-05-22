@@ -5,5 +5,5 @@ dependencies: {  }
 id: auction
 label: Auction
 orderItemType: default
-generateTitle: false
+generateTitle: true
 traits: {  }
