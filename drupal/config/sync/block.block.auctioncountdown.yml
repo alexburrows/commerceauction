@@ -1,0 +1,26 @@
+uuid: 2040e751-b3cb-4066-8810-60a592038b8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - auction
+    - system
+  theme:
+    - bartik
+id: auctioncountdown
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: auction_countdown
+settings:
+  id: auction_countdown
+  label: 'Auction countdown'
+  provider: auction
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/product*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,26 @@
+uuid: 369ea4fb-15d5-49ab-993f-b57d49daaf7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - auction
+    - system
+  theme:
+    - bartik
+id: biddingformblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: bidding_form
+settings:
+  id: bidding_form
+  label: 'Bidding form block'
+  provider: auction
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/products*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,10 @@
+uuid: 7d53a155-a4bd-4ac8-86e3-3edbd9b29acc
+langcode: en
+status: true
+dependencies: {  }
+id: auction_item
+label: 'Auction item'
+description: ''
+variationType: auction
+injectVariationFields: false
+traits: {  }

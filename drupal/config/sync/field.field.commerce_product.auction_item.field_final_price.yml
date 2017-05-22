@@ -1,0 +1,26 @@
+uuid: eba855a4-fddd-4090-8707-f2b27942c239
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.auction_item
+    - field.storage.commerce_product.field_final_price
+  module:
+    - commerce_price
+id: commerce_product.auction_item.field_final_price
+field_name: field_final_price
+entity_type: commerce_product
+bundle: auction_item
+label: 'Final price'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    number: '0.99'
+    currency_code: GBP
+default_value_callback: ''
+settings:
+  available_currencies:
+    GBP: GBP
+field_type: commerce_price

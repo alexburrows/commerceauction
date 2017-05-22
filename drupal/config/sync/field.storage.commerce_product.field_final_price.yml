@@ -1,0 +1,19 @@
+uuid: 6012fd06-7f26-49b2-966d-2c291ae0929a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_price
+    - commerce_product
+id: commerce_product.field_final_price
+field_name: field_final_price
+entity_type: commerce_product
+type: commerce_price
+settings: {  }
+module: commerce_price
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

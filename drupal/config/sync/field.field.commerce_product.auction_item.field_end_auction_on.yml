@@ -1,0 +1,21 @@
+uuid: 8b5db1eb-84d2-4eab-8f00-6467953c2c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.auction_item
+    - field.storage.commerce_product.field_end_auction_on
+  module:
+    - datetime
+id: commerce_product.auction_item.field_end_auction_on
+field_name: field_end_auction_on
+entity_type: commerce_product
+bundle: auction_item
+label: 'End auction on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,78 @@
+uuid: d5ce4126-3dc0-4a27-991e-a031a43db4ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.auction_item
+    - field.field.commerce_product.auction_item.body
+    - field.field.commerce_product.auction_item.field_end_auction_on
+    - field.field.commerce_product.auction_item.field_final_price
+    - field.field.commerce_product.auction_item.stores
+    - field.field.commerce_product.auction_item.variations
+  module:
+    - commerce
+    - datetime
+    - path
+    - text
+id: commerce_product.auction_item.default
+targetEntityType: commerce_product
+bundle: auction_item
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_end_auction_on:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  stores:
+    type: commerce_entity_select
+    weight: 0
+    settings:
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_final_price: true
+  status: true
+  variations: true

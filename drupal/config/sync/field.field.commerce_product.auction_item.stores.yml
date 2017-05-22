@@ -1,0 +1,21 @@
+uuid: 35273e99-41a5-4c0e-a9ce-170a73b2fdda
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.auction_item
+    - field.storage.commerce_product.stores
+id: commerce_product.auction_item.stores
+field_name: stores
+entity_type: commerce_product
+bundle: auction_item
+label: Stores
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_store'
+  handler_settings: {  }
+field_type: entity_reference

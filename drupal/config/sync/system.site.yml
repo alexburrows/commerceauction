@@ -1,5 +1,5 @@
-uuid: 0cd84976-4fd8-44b7-984a-941dd9c48cd1
-name: 'Drupal 8 Blueprints'
+uuid: ea3a5267-1813-44ea-a56b-d4b6c2ec5ab0
+name: Drupal
 mail: admin@example.com
 slogan: ''
 page:
@@ -12,4 +12,3 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
-mail_notification: ''

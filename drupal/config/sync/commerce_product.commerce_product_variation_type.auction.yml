@@ -1,0 +1,9 @@
+uuid: f105db8e-f557-4304-914c-b1da333a0dc6
+langcode: en
+status: true
+dependencies: {  }
+id: auction
+label: Auction
+orderItemType: default
+generateTitle: false
+traits: {  }

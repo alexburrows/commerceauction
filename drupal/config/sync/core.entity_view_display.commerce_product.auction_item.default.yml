@@ -1,0 +1,58 @@
+uuid: 4f953cb5-4633-4904-8669-d5b64b272657
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.auction_item
+    - field.field.commerce_product.auction_item.body
+    - field.field.commerce_product.auction_item.field_end_auction_on
+    - field.field.commerce_product.auction_item.field_final_price
+    - field.field.commerce_product.auction_item.stores
+    - field.field.commerce_product.auction_item.variations
+  module:
+    - commerce_price
+    - commerce_product
+    - datetime
+    - text
+id: commerce_product.auction_item.default
+targetEntityType: commerce_product
+bundle: auction_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: -4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_end_auction_on:
+    weight: 11
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_final_price:
+    weight: 12
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true
