@@ -5,12 +5,13 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.auction_item
     - field.field.commerce_product.auction_item.body
+    - field.field.commerce_product.auction_item.field_bids
     - field.field.commerce_product.auction_item.field_end_auction_on
     - field.field.commerce_product.auction_item.field_final_price
     - field.field.commerce_product.auction_item.stores
     - field.field.commerce_product.auction_item.variations
   module:
-    - commerce
+    - commerce_price
     - datetime
     - path
     - text
@@ -21,7 +22,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
@@ -30,34 +31,31 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_end_auction_on:
-    weight: 6
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  path:
-    type: path
-    weight: 5
+  field_final_price:
+    type: commerce_price_default
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-  stores:
-    type: commerce_entity_select
-    weight: 0
-    settings:
-      autocomplete_threshold: 7
-      autocomplete_size: 60
-      autocomplete_placeholder: ''
-    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
@@ -65,7 +63,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -73,6 +71,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  field_final_price: true
+  field_bids: true
   status: true
+  stores: true
   variations: true

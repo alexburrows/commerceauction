@@ -1,4 +1,4 @@
-uuid: 2040e751-b3cb-4066-8810-60a592038b8c
+uuid: 16466ea6-a8df-4cd7-b6ba-caa02d26fbf4
 langcode: en
 status: true
 dependencies:
@@ -7,15 +7,15 @@ dependencies:
     - system
   theme:
     - bartik
-id: auctioncountdown
+id: currentbids
 theme: bartik
 region: content
 weight: 0
 provider: null
-plugin: auction_countdown
+plugin: current_bids
 settings:
-  id: auction_countdown
-  label: 'Auction countdown'
+  id: current_bids
+  label: 'Current bids'
   provider: auction
   label_display: visible
 visibility:

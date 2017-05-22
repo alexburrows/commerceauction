@@ -6,5 +6,5 @@ id: auction_item
 label: 'Auction item'
 description: ''
 variationType: auction
-injectVariationFields: false
+injectVariationFields: true
 traits: {  }

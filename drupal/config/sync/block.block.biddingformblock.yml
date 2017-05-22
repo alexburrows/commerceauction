@@ -1,4 +1,4 @@
-uuid: 369ea4fb-15d5-49ab-993f-b57d49daaf7b
+uuid: 419ad8e2-0d82-4d29-bca2-a5765ab93d60
 langcode: en
 status: true
 dependencies:
@@ -21,6 +21,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/products*'
+    pages: '/product*'
     negate: false
     context_mapping: {  }
